@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoyalJunction|here you can easily order your food online</title>
+    <link rel="stylesheet" href="royaljunction.css">
+    <link rel="stylesheet" media="screen and (max-width: 1050px)" href="royaljunction-phone.css">
+</head>
+<body>
+
+    <!-- Navigation bar -->
+
+    <nav id="navbar">
+        <div>
+            <img src="images\logo.png" alt="">
+        </div>
+        <ul>
+            <li class="content"><a href="#home">Home</a></li>
+            <li class="content"><a href="#">About</a></li>
+            <li class="content"><a href="#service">Services</a></li>
+            <li class="content"><a href="#contact">Contact Us</a></li>
+            <li class="content"><a href="#sign">Login</a></li>
+        </ul>
+        <button id="ham-menu" onclick="hide()">
+            <div class="hambar"></div>
+            <div class="hambar"></div>
+            <div class="hambar"></div>
+        </button>
+    </nav>
+
+    <!-- Hamburger Menu and Home Content Section -->
+
+    <section id="home">
+        <ul id="ham-item">
+            <li class="ham-cont"><a href="#home">Home</a></li>
+            <li class="ham-cont"><a href="#service">Service</a></li>
+            <li class="ham-cont"><a href="#">About</a></li>
+            <li class="ham-cont"><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div>
+            <h1>Welcome</h1>
+            <span><img src="images\logo.png" alt="">RoyalJunction</span>
+            <button class="btn">Order Now</button>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+
+    <section id="service">
+        <h1>Our Services</h1>
+        <div class="service-content">
+            <div class="box">
+                <img src="images\fast.jpeg" alt="">
+                <h2>Fast Delivery</h2>
+            </div>
+            <div class="box">
+                <img src="images\safety.jpeg" alt="">
+                <h2>Safe Food</h2>
+            </div>
+            <div class="box">
+                <img src="images\homedel.jpeg" alt="">
+                <h2>Delivery at Your Doorstep</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- SignUp Section -->
+
+    <div id="sign">
+        <div class="sign-cont">
+            <h1>Sign Up</h1>
+            <input type="text" class="sing-item" placeholder="Full Name">
+            <input type="text" class="sing-item" placeholder="Contact Number">
+            <input type="email" class="sing-item" placeholder="E-Mail">
+            <button id="submit">Submit</button>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+
+    <div id="contact">
+        <h1>Contact Us</h1>
+        <div class="connect">
+            <img src="images\instagram-logo-icon-png-13580.png" alt="">
+            <img src="images\OIP (1).jpg" alt="">
+            <img src="images\youtube-logo-png-10561.png" alt="">
+
+        </div>
+    </div>
+
+    <!-- Chat Button -->
+
+    <button id="chat"><img src="images\chat.jpeg" alt=""></button>
+
+    <!-- Script for Hamburger Menu -->
+
+    <script>
+        function hide() {
+            let btn = document.getElementById('ham-menu');
+            let ham = document.getElementById('ham-item');
+            if (ham.style.display == 'none') {
+                ham.style.display = 'block';
+            }
+            else if (ham.style.display == 'block') {
+                ham.style.display = 'none';
+            }
+            else {
+                ham.style.display = 'block';
+            }
+        }
+    </script>
+
+</body>
+
+</html>
